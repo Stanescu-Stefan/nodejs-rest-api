@@ -4,6 +4,7 @@ const app = express();
 
 app.use("/test", (req, res) => {
   console.log("Received request");
+  res.status(200).send("Success");
 });
 
 app.listen(3000, () => {
